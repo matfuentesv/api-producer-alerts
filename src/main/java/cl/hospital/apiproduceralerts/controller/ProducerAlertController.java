@@ -4,11 +4,11 @@ import cl.hospital.apiproduceralerts.model.VitalSigns;
 import cl.hospital.apiproduceralerts.service.ProducerAlertService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
+@RequestMapping("/api")
+@CrossOrigin(origins = "http://localhost:4200")
 public class ProducerAlertController {
 
     @Autowired
